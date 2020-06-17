@@ -1,7 +1,7 @@
 ## Watson Discovery
 
 *Quick links :*
-[Home](/README.md) - [**Part 1**](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/wml) - [Part 2](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/discovery) - [Part 3](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/functions) - [Part 4](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Assistant)
+[Home](/README.md) - [Part 1](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/wml) - [**Part 2**](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/discovery) - [Part 3](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/functions) - [Part 4](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Assistant)
 ***
 
 
