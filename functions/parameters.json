@@ -1,0 +1,9 @@
+{
+    "discovery_environment_id":"<your_watson_discovery_env_id>",
+    "wml_apikey":"<your_watson_machine_learning_service_api_key",
+    "discovery_url":"<your_watson_discovery_url_ eg:https://api.eu-gb.discovery.watson.cloud.ibm.com/instances/abcdefgh>",
+    "discovery_collection_id":"<your_watson_discovery_collection_id>",
+    "wml_instance_id":"<your_watson_machine_learning_service_instance_id",
+    "discovery_apikey":"<your_watson_discovery_apikey>",
+    "wml_scoring_url":"<your_watson_machine_learning_deployment_url eg:https://us-south.ml.cloud.ibm.com/v4/deployments/abcdefg/predictions",
+}
