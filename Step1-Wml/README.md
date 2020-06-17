@@ -1,28 +1,58 @@
 ## AutoAI and WML
 
 *Quick links :*
-[Home](/README.md) - [**Part 1**](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Part1-Wml) - [Part 2](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Part2-Discovery) - [Part 3](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Part3-Functions) - [Part 4](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Part4-Assistant)
+[Home](/README.md) - [**Step 1**](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step1-Wml) - [Step 2](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step2-Discovery) - [Step 3](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step3-Functions) - [Step 4](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step4-Assistant)
 ***
 
 ### Overview
 
-In this, you will create a simple machine learning model using AutoAI and save the model using WML(Watson Machine Learning)
+In this step, you will create a simple machine learning model using AutoAI and save the model using WML(Watson Machine Learning)
 
 ### Setup an instance of Watson Studio
 
-1. Login to [IBM Cloud](https://cloud.ibm.com/login). From Catalog, filter the services by AI and click on Watson Studio. Either leave the defaults or change them accordingly and click on Create.
+1. click on Catalog
 
-![](../Media/img/img-01.png)
+![](../Media/img/dashboard.png)
 
-2. Once you click on Create, the service is provisioned. Click on Get Started.
+you can look at a whole list of services and offerings from ibm cloud
+2. Select services tab and Filter by AI
+
+![](../Media/img/services.png)
+
+3. click on Watson Studio.
+
+ ![](../Media/img/watsonStudio.png)
+ 
+ 
+4. You can leave the defaults and click on Create.Do take a minute to look at features you are getting with lite plan of the service
+
+![](../Media/img/serviceCreation.png)
+
+
+2. Once you click on Create, the service is provisioned. Click on Get Started.It opens a new tab with your watson studio dashboard
 
 ![](../Media/img/img-02.png)
 
-3. Select Create an empty project.
+3. Once you are in  watson studio dashboard, the first thing we will do is create a project  to work in.click on create a project
+![](../Media/img/createProject.png)
+
+4. Select Create an empty project.
 
 ![](../Media/img/img-03.png)
 
-4. Give a Unique name to your project. To add storage to your project, Click on Add->Provision a new COS instance or use the existing ones. Click on Refresh. Make sure your storage is added to your project and click on Create.
+4. Give a Unique name to your project.and To add storage to your project, Click on Add.if you see the storage option prefilled, you can skip the next step
+
+![](../Media/img/project.png)
+
+5. It will open a new tab where you can create a new instance of object storage. you can select the lite plan and click on create
+![](../Media/img/addStorage.png)
+
+6. you can leave the defaults and click on confirm.the service name generated for you can be different
+
+![](../Media/img/confirm.png)
+
+
+->Provision a new COS instance or use the existing ones. Click on Refresh. Make sure your storage is added to your project and click on Create.
 
 ![](../Media/img/img-04.png)
 
