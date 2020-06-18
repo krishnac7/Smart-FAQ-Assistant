@@ -52,9 +52,98 @@ you can look at a whole list of services and offerings from ibm cloud
 ![](../Media/img/confirm.png)
 
 
-->Provision a new COS instance or use the existing ones. Click on Refresh. Make sure your storage is added to your project and click on Create.
+7. Once the Object storage is created, you can close the tab and press refresh to see your attached storage
 
-![](../Media/img/img-04.png)
+![](../Media/img/attachStorage.gif)
+
+### Run and Auto-AI Experiment
+
+6. Within project, click on 'Add to project' and choose AutoAI Experiment.
+
+![](../Media/img/img-07.png)
+
+7. Choose From blank and Provide a name for your experiment. then click on the 'Associate a machine learning service instance' url
+![](../Media/img/autoAi.png)
+
+8. select a lite instance and click confirm then create the service.Once the service is created go back to the Auto AI Tab and click on Reload.
+
+![](../Media/img/createWml.gif)
+
+9. Click on create and in the next page click pn browse and upload 'train.csv_shaped.csv' or you can also drag and rop the same file on the upload area
+![](../Media/img/uploadData.png)
+
+9. Select the predict column to be 'loan status' and click on 'Run Experiment'
+
+![](../Media/img/runExperiment.png)
+
+11. Then the AutoAI experiment starts running. AutoAI will create multiple pipelines.
+
+![](../Media/img/autoAiRun.png)
+
+to further understand how AutoAi works, please refer the [documentation](https://dataplatform.cloud.ibm.com/docs/content/wsj/analyze-data/autoai-overview.html?context=analytics)
+
+12. Once the process is completed, the pipelines are sorted according to the optimization metric and the most efficient pipeline is marked with a star next to it.
+
+![](../Media/img/img-13.png)
+
+## Save the model and create a deployment
+
+13. You can explore the pipeline information by clicking on its name. To save this model, from the right top corner click on Save as and choose model.
+
+![](../Media/img/img-14.png)
+
+14. You can leave the model details as default and click on save
+
+![](../Media/img/modelDetails.png)
+
+ #### Note: the name generated depends on the algorithm used, sometimes it can be different from what is showed in the illustrations
+
+14. Once the model is saved, click on View in project from the pop-up notification to open the saved model.You can always find it listed in assets tab of your project
+
+![](../Media/img/viewModel.png)
+
+15. once the saved model is opened,navigate to deployments tab and click on click on Add Deployment.
+
+![](../Media/img/img-16.png)
+
+16. Provide a name and click on Save.
+
+![](../Media/img/deployment.png)
+
+17. Wait for deployment status to change to Ready and click on the created deployment.
+
+![](../Media/img/img-18.png)
+
+18. In the deployment,navigate to Test tab and input the details and click on Predict to get the predictions from the saved model
+
+![](../Media/img/testDeployment.png)
+
+19. Now that the model is deployed and you have tested it out, you can switch to the implementation tab and copy the scoring End-Point url
+
+![](../Media/img/wmlEndPoint.png)
+
+20. We would need a couple of more credentials to access the model, to get them navigate to your [resources dashboard on IBM Cloud](https://cloud.ibm.com/resources)
+21. Under services, choose your Machine learning service
+
+![](../Media/img/resources.png)
+
+22. Navigate to the Service Credentials tab and then create a new set of credentials
+
+![](../Media/img/cred.png)
+
+23. You can leave the defaults and click on add, once the new set of credentials are added, you will need to copy
+
+```
+"apikey":"<Your WML API key>"
+"instance_id":"<your WML Instance Id>"
+```
+
+![](../Media/img/getCred.gif)
+
+we suggest maintaining a single note where you copy all the required credentials as we move forward
+
+
+
 
 ### Optional: Refining the data using Data Refinery
 
@@ -71,61 +160,5 @@ you can look at a whole list of services and offerings from ibm cloud
 Once the data is refined, create a job and save the refined dataset as showed below.
 
 <TODO: Add gif for job creation>
-
-### Run and Auto-AI Experiment
-
-6. Within project assets, Add to project -> AutoAI Experiment.
-
-![](../Media/img/img-07.png)
-
-7. Provide a unique name for your experiment, click on Associate a Machine learning Service, add an existing instance if you have any or use the defaults and create a new one. Go back to the project page and click on Reload. Click on create.
-
-![](../Media/img/img-08.png)
-
-8. Either add the refinde data from previous step or download the dataset here and add it to autoai experiment.
-
-![](../Media/img/img-09.png)
-
-9. Select the predict column to be loan status.
-
-![](../Media/img/img-10.png)
-
-10. Click on Run the experiment. This will run the auto ai experiment using defaults but if you want to change anything, click on Experiment settings and edit them accordingly.
-
-![](../Media/img/img-11.png)
-
-11. This will take some time to run. AutoAI will create multiple pipelines, you can sort them by multiple parameters as shown.
-
-![](../Media/img/img-12.png)
-
-12. Once the process is completed, click on the first pipeline - pipeline 1.
-
-![](../Media/img/img-13.png)
-
-13. Pipeline information is provided here. To save this model, from the right top corner click on Save as -> model.
-
-![](../Media/img/img-14.png)
-
-### Save the model and create a deployment
-
-14. Once the model is saved, click on View in project to open the model.
-
-![](../Media/img/img-15.png)
-
-15. Model information like overview, evaluation, deployment and lineage are provided here. Go to Deployments and click on Add Deployment.
-
-![](../Media/img/img-16.png)
-
-16. Provide a unique name and description(if any) and click on Save.
-
-![](../Media/img/img-17.png)
-
-17. Wait for deployment status to say Ready and click on the created deployment.
-
-![](../Media/img/img-18.png)
-
-18. Overview, Implementation and test are provided about the deployment. Go to Test, input the details and click on Predict to get the predictions from the model that has been saved.
-
-![](../Media/img/img-19.png)
 
 Summary: We have created a machine learning model using autoai experiment and saved it using watson machine learning. And then created a web deployment to test the model.
