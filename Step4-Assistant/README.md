@@ -11,48 +11,48 @@ In this, you will create a simple watson assistant flow and enable webhooks whic
 
 ### Setup an instance of Watson Assistant
 
-1. Navigate to [IBM Cloud catalog](https://cloud.ibm.com/catalog). From Catalog, filter the services by AI
+4.1 ) Navigate to [IBM Cloud catalog](https://cloud.ibm.com/catalog). From Catalog, filter the services by AI
 
 ![](../Media/imga/services.png)
 
-2. Click on Watson Assistant.
+4.2 ) Click on Watson Assistant.
 
 ![](../Media/imga/assistant.png)
 
-3. Leave the default values and 'create' a lite service.
-4. one the service is provisioned, click on 'Launch Watson Assistant'
+4.3 ) Leave the default values and 'create' a lite service.
+4.4 ) one the service is provisioned, click on 'Launch Watson Assistant'
 
 ![](../Media/imga/createAssistant.gif)
 
-2. To create a new skill, click on import flow from the top right hand menu. Import the [skill-BankingAssistant.json](https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step4-Assistant/skill-BankingAssistant.json) file
+4.5 ) To create a new skill, click on import flow from the top right hand menu. Import the [skill-BankingAssistant.json](https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step4-Assistant/skill-BankingAssistant.json) file
 
 ![](../Media/imga/importSkill.png)
 
-3. Select 'Import and Overwrite' when prompted
+4.6 ) Select 'Import and Overwrite' when prompted
 
 ![](../Media/imga/overwrite.png)
 
-3. Once you import the flow, you will be able to see intents, entities and dialogs related to the flow.
+4.7 ) Once you import the flow, you will be able to see intents, entities and dialogs related to the flow.
 ![](../Media/imga/importSuccess.gif)
 
-4. Goto webhooks and paste the url that we copied from the functions and add .json at the end of the url.
+4.8 ) Goto webhooks and paste the url that we copied from the functions and add .json at the end of the url.
 ## Note: DO NOT FORGET TO ADD .json TO THE END OF WEBHOOK URL
 
 ![](../Media/imga/img-02.png)
 
-5. Now click on the assistant icon on the left menu and select your Assistant.
-6. click on Add integration
+4.9 ) Now click on the assistant icon on the left menu and select your Assistant.
+4.10 ) click on Add integration
 ![](../Media/imga/enablePreview.png)
-7. Add a stand-alone 'preview' integration
+4.11 ) Add a stand-alone 'preview' integration
 
 ![](../Media/imga/selectPreview.png)
 
-8. Click on 'Create'
+4.12 ) Click on 'Create'
 ![](../Media/imga/createPreview.png)
 
-9. Click on the generated link to open up a preview of your Smart Assistant.
+4.13 ) Click on the generated link to open up a preview of your Smart Assistant.
 
-10. you can query it with any questions related to the document
+4.14 ) you can query it with any questions related to the document
 ```
 Example:
 1. is interest in debt excempted from gst?
@@ -61,7 +61,7 @@ Example:
 ``` 
 ![](../Media/imga/assistantDiscoveryQuery.png)
 
-11. You can check the prediction made by your assistant using Watson machine learning service
+4.15 ) You can check the prediction made by your assistant using Watson machine learning service
 
 ```
 1. Am i eligible for loan?

@@ -11,27 +11,27 @@ In this, you will create an action using cloud functions that will parse the dat
 
 ### Create an action in Functions
 
-1. From the navigation menu, click on [Functions](https://cloud.ibm.com/functions).
+3.1 ) From the navigation menu, click on [Functions](https://cloud.ibm.com/functions).
 
 ![](../Media/imgf/functions.gif)
 
-2. Navigate to 'Actions' tab and click on 'create'
+3.2 ) Navigate to 'Actions' tab and click on 'create'
 
 ![](../Media/imgf/createAction.png)
 
-3. choose 'Action'
+3.3 ) choose 'Action'
 
 ![](../Media/imgf/action.png)
 
-3. Provide a name to your action and change the runtime to python 3.7 and click 'Create'.
+3.4 ) Provide a name to your action and change the runtime to python 3.7 and click 'Create'.
 
 ![](../Media/imgf/runtime.png)
 
-4. Paste the code from [main.py] (https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step3-Functions/main.py) and then save the function
+3.5 ) Paste the code from [main.py] (https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step3-Functions/main.py) and then save the function
 
 ![](../Media/imgf/img-04.png)
 
-5. Go to parameters, click on Add parameter and provide the following parameters that are copied from discovery and watson machine learning services
+3.6 ) Go to parameters, click on Add parameter and provide the following parameters that are copied from discovery and watson machine learning services
 ``` 
     "wml_apikey":"<watson_machine_learning_service_api_key",
     "wml_scoring_url":"<watson_machine_learning_deployment_url>",
@@ -41,12 +41,12 @@ In this, you will create an action using cloud functions that will parse the dat
      "discovery_environment_id":"<watson_discovery_env_id>",
     "discovery_collection_id":"<watson_discovery_collection_id>"
 ```
-6. Once the credentials are entered click on 'save'
+3.7 ) Once the credentials are entered click on 'save'
 ![](../Media/imgf/img-05.png)
 
 
 
-6. Go to endpoints, click on "Enable as web Action" and click on save. Then copy the url that is generated in this step.
+3.8 ) Go to endpoints, click on "Enable as web Action" and click on save. Then copy the url that is generated in this step.
 
 ![](../Media/imgf/enableEndpoint.png)
 
