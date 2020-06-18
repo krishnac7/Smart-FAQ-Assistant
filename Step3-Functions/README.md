@@ -11,26 +11,43 @@ In this, you will create an action using cloud functions that will parse the dat
 
 ### Create an action in Functions
 
-1. From the navigation menu, click on Functions.
+1. From the navigation menu, click on [Functions](https://cloud.ibm.com/functions).
 
-![](../Media/imgf/img-01.png)
+![](../Media/imgf/functions.gif)
 
-2. Select Actions.
+2. Navigate to 'Actions' tab and click on 'create'
 
-![](../Media/imgf/img-02.png)
+![](../Media/imgf/createAction.png)
 
-3. Provide a name to your action and change the runtime to python 3.7.
+3. choose 'Action'
 
-![](../Media/imgf/img-03.png)
+![](../Media/imgf/action.png)
 
-4. Paste the code provided in this repo.
+3. Provide a name to your action and change the runtime to python 3.7 and click 'Create'.
+
+![](../Media/imgf/runtime.png)
+
+4. Paste the code from [main.py] (https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step3-Functions/main.py) and then save the function
 
 ![](../Media/imgf/img-04.png)
 
-5. Go to parameters, click on Add parameter and provide the following parametes that are copied from discovery and watson machine learning.
-
+5. Go to parameters, click on Add parameter and provide the following parameters that are copied from discovery and watson machine learning services
+``` 
+    "wml_apikey":"<watson_machine_learning_service_api_key",
+    "wml_scoring_url":"<watson_machine_learning_deployment_url>",
+    "wml_instance_id":"<watson_machine_learning_service_instance_id",
+    "discovery_url":"<watson_discovery_url>",
+    "discovery_apikey":"<watson_discovery_apikey>",
+     "discovery_environment_id":"<watson_discovery_env_id>",
+    "discovery_collection_id":"<watson_discovery_collection_id>"
+```
+6. Once the credentials are entered click on 'save'
 ![](../Media/imgf/img-05.png)
 
-6. Go to endpoints, click on "Enable as web Action" copy the url that is generated in this step.
 
-![](../Media/imgf/img-06.png)
+
+6. Go to endpoints, click on "Enable as web Action" and click on save. Then copy the url that is generated in this step.
+
+![](../Media/imgf/enableEndpoint.png)
+
+Once you have the public endpoint copied, now we can proceed to The [Final Step](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step4-Assistant)
