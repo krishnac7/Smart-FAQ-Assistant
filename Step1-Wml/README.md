@@ -143,24 +143,3 @@ to further understand how AutoAi works, please refer the [documentation](https:/
 we suggest maintaining a single note where you copy all the required credentials as we move forward.
 
 24. Now proceed to [Step 2](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step2-Discovery)
-
-
-
-
-### Optional: Refining the data using Data Refinery
-
-5. Go to Assets -> Add to project -> Data -> browse for the dataset train.csv and upload it here. Once the dataset is uploaded, click on refine which will open you the dataset in data refinery. Apply following operations/actions on the dataset.
-
-![](../Media/img/img-05.png)
-
-<TODO: Add actions>
-
-![](../Media/img/img-06.png)
-
-<TODO: Add gifs for data refinery>
-
-Once the data is refined, create a job and save the refined dataset as showed below.
-
-<TODO: Add gif for job creation>
-
-Summary: We have created a machine learning model using autoai experiment and saved it using watson machine learning. And then created a web deployment to test the model.
