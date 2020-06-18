@@ -8,83 +8,110 @@
 ### Overview
 
 In this, you will provision an instance of Watson Discovery and
+1. Navigate to [IBM Cloud Dashboard](https://cloud.ibm.com/)
+2. Click on Catalog
+![](../Media/imgd/dashboard.png)
 
-1. From Dashboard, go to Catalog and provision an instance of Watson Discovery. Opwn the provisioned instance from Resource list -> NAME_OF_YOUR_WATSON_DISCOVERY_INSTANCE. And the click on Launch Discovery.
+you can look at a whole list of services and offerings from ibm cloud
 
-![](../Media/imgd/1.png)
+3. Select services tab and Filter by AI
 
-2. Click on "Upload your own data" and then select "set up with current plan", this will set up storage. Provide the details of the collection and click on "Create".
+![](../Media/imgd/services.png)
 
-![](../Media/imgd/2.png)
+4. Click on Discovery service
 
-3. Upload the document provided. This will take some time for processing.
+![](../Media/imgd/discovery.png)
 
-![](../Media/imgd/3.png)
+5. You can leave the defaults and go ahead to 'create'. wait for the provision to complete and then open the service dashboard
 
-4. Once the document is loaded, it will look like the following screen.
+![](../Media/imgd/createDiscovery.gif)
 
-![](../Media/imgd/4.png)
+6. Click on 'Launch Watson Discovery' to get started
 
-5. From the left side of the screen, click on the search icon.
+![](../Media/imgd/launchDiscovery.png)
 
-![](../Media/imgd/5.png)
+7. Once in Watson Discovery, click on 'Upload your own Data'
 
-6. Enter the provided Natural language query in the search tab i.e., "is tax payable on interest charged by banks on outstanding gold loan". And the click on Run query which will give you a Summary.
+![](../Media/imgd/uploadData.png)
 
-![](../Media/imgd/6.png)
+8. When asked for storage options, choose 'Setup with current plan'
 
-7. Go back to the home page of watson discovery which will show you the list of collections and open the collection you have just created. From the top right corner, click on "Configure data". This will open up your document that you have uploaded within the collection.
+![](../Media/imgd/setUpStorage.png)
 
-![](../Media/imgd/7.png)
+9. Once the storage setup is complete, click on 'Continue'
 
-8. Select a page, add field labels to the pdf by selecting the data. In this case, its question label to the sentences in the document.
+10. when a prompt for naming your collection comes in, give the collection a name and click on create
 
-![](../Media/imgd/8.png)
+![](../Media/imgd/nameCollection.png)
 
-9. Similarly add answer field label too and click on "Submit page". Do this for all the pages required.
+11. Once the collection is open, you can click on 'Upload documents' and select the [faq_banking.pdf](https://github.com/krishnac7/Smart-FAQ-Assistant/blob/master/Step2-Discovery/faq_banking.pdf) file or Drag and drop it.
 
-![](../Media/imgd/9.png)
+12. It might take a little while for initial processing of the document
 
-10. Go to "Manage fields", click on "split the document".
+![](../Media/imgd/processingDocuments.gif)
 
-![](../Media/imgd/10.png)
+13. Once the processing is done, you would see some basic enrichments generated from the document
+![](../Media/imgd/enrichments.png)
 
-11. Select the label "question". And then click on "Apply changes to collection" from the right top corner of screen.
+14. Now click on 'Configure Data' to bring up the Smart Document Understanding tool
+![](../Media/imgd/configureData.png)
 
-![](../Media/imgd/11.png)
+15. Once you are in SDU, you will see an overview of your Document.Switch to single page View
+![](../Media/imgd/singlePageView.png)
 
-12. This will give you a pop-up asking to Upload documents. Select the document that will be provided to you.
+16. You can click on the 'question' label and start marking the questions column.Do the same for 'answer' label
 
-![](../Media/imgd/12.png)
+![](../Media/imgd/markAnswers.gif)
 
-13. This will take some time to load and you will be able to see the change in number of documents and field labels in the overview page.
+17. Once ou are happy with the marking, click on submit
+18. you can repeat the process for the next 5-6 pages, you will notice that suggestions will be made automatically as you proceed, once you are sure that the model has learnt well and the layouts suggested are good, you can jump to the next step
 
-![](../Media/imgd/13.png)
+![](../Media/imgd/suggestions.png)
 
-14. Now click on search icon, search for "is tax payable on interest charged by banks on outstanding gold loans", click on "Run query".
+19. Goto 'Manage fields' tab and in the 'split document by' drop down, select questions
 
-![](../Media/imgd/14.png)
+![](../Media/imgd/manageFields.png)
 
-15. Scroll down and open "More options"
+20. then click on Apply changes to the collection, and when asked for upload the same pdf again
 
-![](../Media/imgd/15.png)
+![](../Media/imgd/applyChanges.gif)
 
-16. Select the values as follows.
+21. you can see that now the document has been split into sub-documents basing on the questions column
 
-![](../Media/imgd/16.png)
+![](../Media/imgd/documentSplit.png)
 
-17. You will be able to see the answer in the summary screen.
 
-![](../Media/imgd/17.png)
 
-18. Go to overview page, from the right top corner, click on "view api details", copy the collection id, configuration id and environment id.
+30. Now you can test out the results by clicking on the query tab and entering a natural language query like 
 
-![](../Media/imgd/18.png)
+```
+is tax payable on interest charged by banks on outstanding gold loan
+```
+![](../Media/imgd/query.png)
 
-19. From resource list, open watson discovery instance, click on "Service credentials".
+31. you can further refine the responses using 'more options'
 
-![](../Media/imgd/19.png)
+![](../Media/imgd/refineResult.gif)
 
-20. Click on "New credential", use the defaults and create a new set of service credentials. Copy them.
+32. Now that we have properly configured our Watson Discovery instance to answer queries from the pdf, lets go ahead and get the credentials to be used
 
-![](../Media/imgd/20.png)
+33. click on the api icon on top right and copy
+```
+Collection ID:
+Configuration ID:
+Environment ID:
+```
+![](../Media/imgd/apiDetails.png)
+
+34. Navigate to [IBM Cloud services Dashboard](https://cloud.ibm.com/resources)
+35. Select your Discovery Instance and navigate to the 'service credentials' tab
+36. Create a new set of credentials and copy the
+
+```
+"apikey":
+"url":
+```
+![](../Media/imgd/serviceCredentials.gif)
+
+
+Now we can proceed to [Step 3](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step3-Functions)

@@ -10,7 +10,7 @@ In this step, you will create a simple machine learning model using AutoAI and s
 
 ### Setup an instance of Watson Studio
 
-1. click on Catalog
+1. Click on Catalog
 
 ![](../Media/img/dashboard.png)
 
@@ -19,7 +19,7 @@ you can look at a whole list of services and offerings from ibm cloud
 
 ![](../Media/img/services.png)
 
-3. click on Watson Studio.
+3. Click on Watson Studio.
 
  ![](../Media/img/watsonStudio.png)
  
@@ -140,7 +140,9 @@ to further understand how AutoAi works, please refer the [documentation](https:/
 
 ![](../Media/img/getCred.gif)
 
-we suggest maintaining a single note where you copy all the required credentials as we move forward
+we suggest maintaining a single note where you copy all the required credentials as we move forward.
+
+24. Now proceed to [Step 2](https://github.com/krishnac7/Smart-FAQ-Assistant/tree/master/Step2-Discovery)
 
 
 
