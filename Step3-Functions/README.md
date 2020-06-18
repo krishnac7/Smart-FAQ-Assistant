@@ -27,7 +27,7 @@ In this, you will create an action using cloud functions that will parse the dat
 
 ![](../Media/imgf/runtime.png)
 
-3.5 ) Paste the code from [main.py] (https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step3-Functions/main.py) and then save the function
+3.5 ) Paste the code from [main.py](https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step3-Functions/main.py) and then save the function
 
 ![](../Media/imgf/img-04.png)
 

@@ -9,6 +9,7 @@
 
 In this, you will provision an instance of Watson Discovery and
 2.1 ) Navigate to [IBM Cloud Dashboard](https://cloud.ibm.com/)
+
 2.2 ) Click on Catalog
 ![](../Media/imgd/dashboard.png)
 
