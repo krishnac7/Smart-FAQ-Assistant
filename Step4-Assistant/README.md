@@ -11,18 +11,69 @@ In this, you will create a simple watson assistant flow and enable webhooks whic
 
 ### Setup an instance of Watson Assistant
 
-1. Login to [IBM Cloud](https://cloud.ibm.com/login). From Catalog, filter the services by AI and click on Watson Assistant. Either leave the defaults or change them accordingly and click on Create. On successful provision, click on Launch Assistant.
+1. Navigate to [IBM Cloud catalog](https://cloud.ibm.com/catalog). From Catalog, filter the services by AI
 
-![](../Media/imga/img-01.png)
+![](../Media/imga/services.png)
 
-2. Create a new skill, click on import flow and import the .json provided in the repo.
+2. Click on Watson Assistant.
 
-3. Once you import the flow, you will be able to see intents, entities and dialogs related to the flow. Click on "Try it" from the right top corner to see how the training works.
+![](../Media/imga/assistant.png)
+
+3. Leave the default values and 'create' a lite service.
+4. one the service is provisioned, click on 'Launch Watson Assistant'
+
+![](../Media/imga/createAssistant.gif)
+
+2. To create a new skill, click on import flow from the top right hand menu. Import the [skill-BankingAssistant.json](https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step4-Assistant/skill-BankingAssistant.json) file
+
+![](../Media/imga/importSkill.png)
+
+3. Select 'Import and Overwrite' when prompted
+
+![](../Media/imga/overwrite.png)
+
+3. Once you import the flow, you will be able to see intents, entities and dialogs related to the flow.
+![](../Media/imga/importSuccess.gif)
+
+4. Goto webhooks and paste the url that we copied from the functions and add .json at the end of the url.
+## Note: DO NOT FORGET TO ADD .json TO THE END OF WEBHOOK URL
 
 ![](../Media/imga/img-02.png)
 
-4. Goto webhooks and paste the url that we copied from the functions and add .json at the end of the url.
+5. Now click on the assistant icon on the left menu and select your Assistant.
+6. click on Add integration
+![](../Media/imga/enablePreview.png)
+7. Add a stand-alone 'preview' integration
 
-5. Click on "Try it" enter the parameters asked and check if its fetching details from the model that we deployed in wml. On successful completion, it will look something like the following.
+![](../Media/imga/selectPreview.png)
 
-![](../Media/imga/img-03.png)
+8. Click on 'Create'
+![](../Media/imga/createPreview.png)
+
+9. Click on the generated link to open up a preview of your Smart Assistant.
+
+10. you can query it with any questions related to the document
+```
+Example:
+1. is interest in debt excempted from gst?
+
+2. Would assignment or sale of unsecured debts be liable to gst?
+``` 
+![](../Media/imga/assistantDiscoveryQuery.png)
+
+11. You can check the prediction made by your assistant using Watson machine learning service
+
+```
+1. Am i eligible for loan?
+
+income: 4500
+co-applicant income: 5000
+loan amount: 86000
+term :36
+credit history available: yes
+```
+
+![](../Media/imga/assistantWMLQuery.png)
+
+
+Congratulations! you've deployed a multi functional smart assistant :)
