@@ -8,6 +8,14 @@
 
 In this step, you will create a simple machine learning model using AutoAI and save the model using WML(Watson Machine Learning)
 
+1.0) Download the project files from [Github repo](https://github.com/krishnac7/Smart-FAQ-Assistant/archive/master.zip)
+
+```
+
+git clone https://github.com/krishnac7/Smart-FAQ-Assistant.git
+
+```
+
 ### Setup an instance of Watson Studio
 
 1.1 ) Click on Catalog
@@ -48,7 +56,7 @@ you can look at a whole list of services and offerings from ibm cloud
 1.9 ) It will open a new tab where you can create a new instance of object storage. you can select the lite plan and click on create
 ![](../Media/img/addStorage.png)
 
-1.10 ) you can leave the defaults and click on confirm.the service name generated for you can be different
+1.10 ) You can leave the defaults and click on confirm.the service name generated for you can be different
 
 ![](../Media/img/confirm.png)
 
@@ -66,11 +74,11 @@ you can look at a whole list of services and offerings from ibm cloud
 1.13 ) Choose From blank and Provide a name for your experiment. then click on the 'Associate a machine learning service instance' url
 ![](../Media/img/autoAi.png)
 
-1.14 ) select a lite instance and click confirm then create the service.Once the service is created go back to the Auto AI Tab and click on Reload.
+1.14 ) Select a lite instance and click confirm then create the service.Once the service is created go back to the Auto AI Tab and click on Reload.
 
 ![](../Media/img/createWml.gif)
 
-1.15 ) Click on create and in the next page click pn browse and upload 'train.csv_shaped.csv' or you can also drag and rop the same file on the upload area
+1.15 ) Click on create and in the next page click pn browse and upload 'train.csv_shaped.csv' or you can also drag and drop the same file on the upload area
 ![](../Media/img/uploadData.png)
 
 1.16 ) Select the predict column to be 'loan status' and click on 'Run Experiment'
@@ -103,7 +111,7 @@ to further understand how AutoAi works, please refer the [documentation](https:/
 
 ![](../Media/img/viewModel.png)
 
-1.22 ) once the saved model is opened,navigate to deployments tab and click on click on Add Deployment.
+1.22 ) Once the saved model is opened,navigate to deployments tab and click on click on Add Deployment.
 
 ![](../Media/img/img-16.png)
 
@@ -124,6 +132,7 @@ to further understand how AutoAi works, please refer the [documentation](https:/
 ![](../Media/img/wmlEndPoint.png)
 
 1.27 ) We would need a couple of more credentials to access the model, to get them navigate to your [resources dashboard on IBM Cloud](https://cloud.ibm.com/resources)
+
 1.28 ) Under services, choose your Machine learning service
 
 ![](../Media/img/resources.png)

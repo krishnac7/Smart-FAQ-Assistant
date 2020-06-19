@@ -19,7 +19,7 @@ In this, you will create an action using cloud functions that will parse the dat
 
 ![](../Media/imgf/createAction.png)
 
-3.3 ) choose 'Action'
+3.3 ) Choose 'Action'
 
 ![](../Media/imgf/action.png)
 

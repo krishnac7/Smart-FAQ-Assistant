@@ -20,9 +20,11 @@ In this, you will create a simple watson assistant flow and enable webhooks whic
 ![](../Media/imga/assistant.png)
 
 4.3 ) Leave the default values and 'create' a lite service.
-4.4 ) one the service is provisioned, click on 'Launch Watson Assistant'
+
+4.4 ) One the service is provisioned, click on 'Launch Watson Assistant'
 
 ![](../Media/imga/createAssistant.gif)
+
 
 4.5 ) To create a new skill, click on import flow from the top right hand menu. Import the [skill-BankingAssistant.json](https://raw.githubusercontent.com/krishnac7/Smart-FAQ-Assistant/master/Step4-Assistant/skill-BankingAssistant.json) file
 
@@ -41,8 +43,10 @@ In this, you will create a simple watson assistant flow and enable webhooks whic
 ![](../Media/imga/img-02.png)
 
 4.9 ) Now click on the assistant icon on the left menu and select your Assistant.
-4.10 ) click on Add integration
+
+4.10 ) Click on Add integration
 ![](../Media/imga/enablePreview.png)
+
 4.11 ) Add a stand-alone 'preview' integration
 
 ![](../Media/imga/selectPreview.png)
@@ -52,10 +56,10 @@ In this, you will create a simple watson assistant flow and enable webhooks whic
 
 4.13 ) Click on the generated link to open up a preview of your Smart Assistant.
 
-4.14 ) you can query it with any questions related to the document
+4.14 ) You can query it with any questions related to the document
 ```
 Example:
-1. is interest in debt excempted from gst?
+1. Is interest in debt exempted from gst?
 
 2. Would assignment or sale of unsecured debts be liable to gst?
 ``` 
@@ -66,11 +70,11 @@ Example:
 ```
 1. Am i eligible for loan?
 
-income: 4500
-co-applicant income: 5000
-loan amount: 86000
-term :36
-credit history available: yes
+Income: 4500
+Co-applicant income: 5000
+Loan amount: 86000
+Term :36
+Credit history available: yes
 ```
 
 ![](../Media/imga/assistantWMLQuery.png)
